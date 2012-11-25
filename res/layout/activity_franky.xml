@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/pro.jazzy.frankymobile.ux.tests"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_alignParentTop="true"
+        android:background="#333" >
+
+        <ImageButton
+            android:id="@+id/ImageButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="4dp"
+            android:src="@android:drawable/btn_dialog" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Franz"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="#333" >
+    </RelativeLayout>
+
+    <pro.jazzy.frankymobile.ux.tests.CircleView
+        android:id="@+id/circle_left_big"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:hapticFeedbackEnabled="true"
+        android:visibility="invisible"
+        app:fill="#ffff8800"
+        app:placement="0"
+        app:radius="170dp"
+        app:split="2" />
+
+    <pro.jazzy.frankymobile.ux.tests.CircleView
+        android:id="@+id/circle_right_big"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:hapticFeedbackEnabled="true"
+        android:visibility="invisible"
+        app:fill="#ff999999"
+        app:placement="1"
+        app:radius="170dp"
+        app:split="3" />
+
+    <pro.jazzy.frankymobile.ux.tests.CircleView
+        android:id="@+id/circle_left_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:hapticFeedbackEnabled="true"
+        app:fill="#ffcc5500"
+        app:placement="0"
+        app:radius="90dp" />
+
+    <pro.jazzy.frankymobile.ux.tests.CircleView
+        android:id="@+id/circle_right_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:hapticFeedbackEnabled="true"
+        app:fill="#ff777777"
+        app:placement="1"
+        app:radius="90dp" />
+
+</RelativeLayout>
